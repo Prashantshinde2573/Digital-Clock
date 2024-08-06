@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@font-face {
+    src: url('fonts/MutatorSans.ttf');
+    font-family:'MutatorSans';
+    font-style: normal;
+    font-weight: 1 1000;
+  }
+
+.container
+{
+    display: flex;
+    max-width: 1440px;
+    height:100vh;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    justify-content: center;
+    align-items: center;
+}
+.clock-box
+{
+    position: relative;
+    width: 400px;
+    height:200px;
+    background-color: rgb(52, 52, 52);
+    justify-content: center;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 254, 254);
+    backdrop-filter: blur(80 px);
+}
+.clock-numbers-box span
+{
+    text-transform: uppercase;
+    font: 1.5rem 'MutatorSans', sans-serif;
+    font-weight: 500;
+    width:fit-content;
+    font-size: 80px;
+    display: inline-block;
+    text-align: center;
+    height:fit-content;
+}
